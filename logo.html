@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/ico superman.webp">
+    <link rel="stylesheet" href="asset/css/estilos.css">
+    <script src="asset/js/correo.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <title>Logo Superman | Oscar Cifuentes</title>
+  </head>
+<body>
+  <header>
+    <nav>
+      <div class="contenedor-foto-circular">
+        <div>
+         <a href="index.html"> <img src="img/oscar.jpg" alt="oscar"></a>
+        </div>
+        <div class="contenedor-nombre">
+         <a href="index.html">Oscar Cifuentes C.</a>
+        </div>
+      </div>
+        <button onclick="sendEmailDefault()">Envíame un Correo</button>
+    </nav>
+  </header>
+  <main>
+    <div class="descripcion">
+      <h1>Logo Superman</h1>
+      <p>La ‘S’ de Superman se ha convertido en un icono mundialmente reconocido</p>
+    </div>
+    <br>
+    <div>
+      <img src="img/logo.jpg" alt="Logo Superman">
+    </div>
+    <br>
+    <div>
+      <p class="texto">Este logo, con forma de diamante y con un borde negro exterior e interior, apareció por primera vez en la esquina inferior derecha de la portada de uno de los cómics en el 1968. Este logo tardaría casi 20 años en aparecer de nuevo en las páginas, pero su éxito se forjó fuera de las viñetas. Desde los años 70 el diseño de Swan se utilizó en todo tipo de merchandising, juguetes, camisetas… Su popularidad hizo que el logo se convirtiera en la seña de identidad de Superman, aunque luego se utilizase con ligeras variaciones en cómics o películas. Había nacido una leyenda.</p>
+    </div>
+  </main>
+  <br>
+  <!-- Boton hacia arriba -->
+  <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+  <script>
+      $(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+  </script>
+  <!-- Fin Boton hacia arriba -->
+  <br>
+  <!-- Footer -->
+  <footer>
+    <p>Oscar Cifuentes C. | Todos los derechos reservados.</p>
+  </footer>
+  <!-- Fin Footer -->
+</body>
+</html>

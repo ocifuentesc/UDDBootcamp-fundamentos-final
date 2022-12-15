@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/ico superman.webp">
+    <link rel="stylesheet" href="asset/css/estilos.css">
+    <script src="asset/js/correo.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <title>Superman | Oscar Cifuentes</title>
+  </head>
+<body>
+  <header>
+    <nav>
+      <div class="contenedor-foto-circular">
+        <div>
+         <a href="index.html"> <img src="img/oscar.jpg" alt="oscar"></a>
+        </div>
+        <div class="contenedor-nombre">
+         <a href="index.html">Oscar Cifuentes C.</a>
+        </div>
+      </div>
+        <button onclick="sendEmailDefault()">Envíame un Correo</button>
+    </nav>
+  </header>
+  <main>
+    <div class="descripcion">
+      <h1>Superman</h1>
+      <p>Nacido en el planeta Krypton bajo el nombre de Kal-El</p>
+    </div>
+    <br>
+    <div>
+      <img src="img/superman.jpg" alt="Superman">
+    </div>
+    <br>
+    <div>
+      <p class="texto">Superman (en español: Superhombre) es un superhéroe ficticio que apareció por primera vez en los cómics estadounidenses publicados por DC Comics. El personaje fue creado por el escritor estadounidense Jerry Siegel y el artista canadiense Joe Shuster en 1933 cuando ambos se encontraban viviendo en Cleveland, Ohio.</p>
+      <br>
+      <p class="texto">Sus creadores lo vendieron a Detective Comics, Inc. en 1938 por 130 dólares​ y la primera aventura del personaje fue publicada en Action Comics #1 (junio de 1938), para luego aparecer en varios seriales de radio, programas de televisión, películas, tiras periódicas y videojuegos. </p>
+      <br>
+      <p class="texto">Con el éxito de sus aventuras, este personaje definió al superhéroe y estableció su primacía dentro del cómic estadounidense.1​ Su apariencia del personaje es distintiva y se volvió icónica: un traje azul y rojo, con una capa y un emblema con una letra “S” estilizada en su pecho, el cual se ha convertido en un símbolo del personaje.</p>
+    </div>
+  </main>
+  <br>
+  <!-- Boton hacia arriba -->
+  <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+  <script>
+      $(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+  </script>
+  <!-- Fin Boton hacia arriba -->
+  <br>
+  <!-- Footer -->
+  <footer>
+    <p>Oscar Cifuentes C. | Todos los derechos reservados.</p>
+  </footer>
+  <!-- Fin Footer -->
+</body>
+</html>

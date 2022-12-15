@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/ico superman.webp">
+    <link rel="stylesheet" href="asset/css/estilos.css">
+    <script src="asset/js/correo.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <title>Krypton | Oscar Cifuentes</title>
+  </head>
+<body>
+  <header>
+    <nav>
+      <div class="contenedor-foto-circular">
+        <div>
+         <a href="index.html"> <img src="img/oscar.jpg" alt="oscar"></a>
+        </div>
+        <div class="contenedor-nombre">
+         <a href="index.html">Oscar Cifuentes C.</a>
+        </div>
+      </div>
+        <button onclick="sendEmailDefault()">Envíame un Correo</button>
+    </nav>
+  </header>
+  <main>
+    <div class="descripcion">
+      <h1>Planeta Krypton</h1>
+      <p>Han localizado el planeta Krypton</p>
+    </div>
+    <br>
+    <div>
+      <img src="img/krypton.jpg" alt="Planeta Krypton">
+    </div>
+    <br>
+    <div>
+    <p class="texto">La realidad y la ficción se unen en el número 14 de Action Comics, aportando implicaciones reales a una historia icónica de Superman. </p>
+    <br> 
+    <p class="texto">En la explosiva historia de complemento “Star Light, Star Bright”, el mundialmente famoso astrofísico Neil DeGrasse Tyson ayuda a Superman a encontrar su planeta natal en el último día de su existencia. </p>
+    <br> 
+    <p class="texto">Ayer, el Dr. Tyson anunció la localización real de un sistema similar al de Krypton en nuestro universo conocido.</p>
+    <br>
+    <p class="texto">“Este es un gran hito en la mitología de Superman, y le da a nuestro superhéroe su lugar en el universo”, dijo Dan DiDio. “Tener a Neil DeGrasse Tyson en el cómic fue una cosa, pero aplicar ciencia real a esta historia ha cambiado para siempre el lugar de Superman en la historia. Ahora, los fans podrán mirar al cielo nocturno y decir ‘allí nació Superman’.”</p>
+    <br>
+    <p class="texto">La estrella enana roja escogida por tener la capacidad de tener un planeta similar a Krypton está situada en la constelación Corvus, a 27,1 años luz de la Tierra. La estrella, denominada LHS 250, tiene una superficie roja y muy turbulenta, algo más fría y pequeña que la del Sol. Para encontrarla en el cielo nocturno, los astrónomos aficionados y los fans de Superman puede seguir estas coordenadas:</p>
+    </div>
+  </main>
+  <br>
+  <!-- Boton hacia arriba -->
+  <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+  <script>
+      $(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+  </script>
+  <!-- Fin Boton hacia arriba -->
+  <br>
+  <!-- Footer -->
+  <footer>
+    <p>Oscar Cifuentes C. | Todos los derechos reservados.</p>
+  </footer>
+  <!-- Fin Footer -->
+</body>
+</html>

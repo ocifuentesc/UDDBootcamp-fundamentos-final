@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/ico superman.webp">
+  <link rel="stylesheet" href="asset/css/estilos.css">
+  <link rel="stylesheet" href="asset/css/carrusel.css">
+  <script src="asset/js/saludo.js"></script>
+  <script src="asset/js/correo.js"></script>
+  <script src="asset/js/carrusel.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <title>Oscar Cifuentes</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="contenedor-foto-circular">
+        <div>
+         <a href="index.html"> <img src="img/oscar.jpg" alt="oscar"></a>
+        </div>
+        <div class="contenedor-nombre">
+         <a href="index.html">Oscar Cifuentes C.</a>
+        </div>
+      </div>
+        <button onclick="sendEmailDefault()">Envíame un Correo</button>
+    </nav>
+  </header>
+  <main>
+    <div class="descripcion">
+      <h1>Superman</h1>
+      <p>Nacido en el planeta Krypton bajo el nombre de Kal-El</p>
+    </div>
+
+    <div class="seccion"> 
+
+      <!-- Artículo 1 -->
+      <div class="articulo"> 
+        <div class="imagen-articulo"> 
+          <a href="logo.html"><img src="./img/logo.jpg" alt="Logo Superman"></a>
+        </div>
+        <div class="info-articulo"> 
+          <div> 
+            <span>Superheroes</span>
+            <a class="titulo-articulo" href="logo.html"><h2>Logo Superman</h2></a>
+            <p>Este logo, apareció por primera vez en la esquina inferior derecha de la portada de uno de los cómics en el 1968.</p>
+          </div>
+          <div>  
+            <time datetime="2022-12-08">8 Diciembre 2022</time>
+          </div>
+        </div>
+      </div>
+      <!-- Fin Artículo 1 -->
+      <!-- Artículo 2 -->
+      <div class="articulo"> 
+        <div class="imagen-articulo"> 
+          <a href="superman.html"><img src="./img/superman.jpg" alt="Superman"></a>
+        </div>
+        <div class="info-articulo"> 
+          <div> 
+            <span>Superheroes</span>
+            <a class="titulo-articulo" href="superman.html"><h2>Superman</h2></a>
+            <p>Superhéroe ficticio que apareció por primera vez en los cómics estadounidenses publicados por DC Comics.</p>
+          </div>
+          <div>  
+            <time datetime="2022-12-08">8 Diciembre 2022</time>
+          </div>
+        </div>
+      </div>
+      <!-- Fin Artículo 2 -->
+      <!-- Artículo 3 -->
+      <div class="articulo"> 
+        <div class="imagen-articulo"> 
+          <a href="krypton.html"><img src="./img/krypton.jpg" alt="Logo Superman"></a>
+        </div>
+        <div class="info-articulo"> 
+          <div> 
+            <span>Superheroes</span>
+            <a class="titulo-articulo" href="krypton.html"><h2>Planeta Krypton</h2></a>
+            <p>El Dr. Tyson anunció la localización real de un sistema similar al de Krypton en nuestro universo conocido.</p>
+          </div>
+          <div>
+            <time datetime="2022-12-08">8 Diciembre 2022</time>
+          </div>
+        </div>
+      </div>
+      <!-- Fin Artículo 3 -->
+    </div>
+    <!-- Fin Seccion -->
+  </main>
+  <br>
+  <!-- Carrusel de Fotos -->
+  <div class="carrusel">
+    <div id="imagen"></div>
+  </div>
+  <div class="controles">
+    <button id="retroceder">Retroceder</button>
+    <button id="play">Play</button>
+    <button id="stop" disabled>Stop</button>
+    <button id="avanzar">Avanzar</button>
+  </div>
+    <!-- Fin Carrusel de Fotos -->
+  <br>
+  <!-- Boton hacia arriba -->
+  <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+  <script>
+      $(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+  </script>
+  <!-- Fin Boton hacia arriba -->
+  <br>
+  <!-- Footer -->
+  <footer>
+    <p>Oscar Cifuentes C. | Todos los derechos reservados.</p>
+  </footer>
+  <!-- Fin Footer -->
+</body>
+</html>
